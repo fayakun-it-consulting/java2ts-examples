@@ -5,7 +5,7 @@
     "scripts": {
         "simple": "java2ts src/simple/simple.json",
         "antlr4": "java2ts src/antlr4/antlr4.json",
-        "jacpfx": "ts-node-esm src/jacpfx/convertJacpFX.ts",
+        "jacpfx": "ts-node-esm src/jacpfx/convertJacpFXTests.ts",
         "jdk-tests": "ts-node-esm src/jdk-tests/convertJDKTests.ts",
         "link java2ts": "npm link java2typescript",
         "unlink java2ts": "npm unlink java2typescript",
