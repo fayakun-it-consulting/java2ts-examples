@@ -5,8 +5,8 @@
     "scripts": {
         "simple": "java2ts src/simple/simple.json",
         "antlr4": "java2ts src/antlr4/antlr4.json",
-        "jacpfx": "ts-node-esm src/jacpfx/convertJacpFXTests.ts",
-        "jdk-tests": "ts-node-esm src/jdk-tests/convertJDKTests.ts",
+        "jacpfx": "tsx src/jacpfx/convertJacpFXTests.ts",
+        "jdk-tests": "tsx src/jdk-tests/convertJDKTests.ts",
         "link java2ts": "npm link java2typescript",
         "unlink java2ts": "npm unlink java2typescript",
         "eslint": "eslint ."
@@ -37,8 +37,8 @@
         "eslint-plugin-import": "2.27.5",
         "eslint-plugin-jsdoc": "40.1.0",
         "eslint-plugin-prefer-arrow": "1.2.3",
-        "java2typescript": "1.0.2",
-        "ts-node": "10.9.1"
+        "java2typescript": "^1.1.0",
+        "tsx": "^4.20.3"
     },
     "dependencies": {
         "jree": "1.2.2"

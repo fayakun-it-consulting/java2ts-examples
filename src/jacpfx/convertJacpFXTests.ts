@@ -70,19 +70,16 @@ const importResolver = (packageId: string): PackageSource | undefined => {
 const classResolver = new Map<string, IClassResolver>([
 ]);
 
-const convertJacPFX = async () => {
+const convertJacpFX = async () => {
     const antlrToolOptions: IConverterConfiguration = {
-        packageRoot: "./src/jacpfx/api",
-        outputPath: "./src/jacpfx/typescript",
+        outputPath: "./src/jacpfx/output",
         options: {
             importResolver,
             classResolver,
             convertAnnotations: true,
-            sourceMappings: [
-            ],
             preferArrowFunctions: true,
             autoAddBraces: true,
-            addIndexFiles: false,
+            addIndexFiles: true,
             addNullUnionType: false,
             suppressTypeWithInitializer: true,
             wrapStringLiterals: false,
@@ -113,4 +110,4 @@ const convertJacPFX = async () => {
     await converter.startConversion();
 };
 
-await convertJacPFX();
+await convertJacpFX();
